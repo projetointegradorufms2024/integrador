@@ -18,6 +18,7 @@ body {
 }
 
 header {
+  position: relative;
   text-align: center;
   padding: 30px 0;
   background: linear-gradient(135deg, #3498db, #2c3e50);
@@ -27,6 +28,31 @@ header {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos para o link Área Restrita */
+.restricted-area {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10; /* Garante que o link esteja acima de outros elementos */
+}
+
+restricted-area a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #e74c3c;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  display: inline-flex; /* Alinha o texto e o ícone */
+  align-items: center;
+  gap: 5px; /* Espaço entre o texto e o ícone */
+  cursor: pointer; /* Mostra o ícone de "mão" ao passar o mouse */
+}
+
+.restricted-area a:hover {
+  background-color: #c0392b;
+}
 .logo {
   font-size: 2.5rem;
   font-weight: bold;
@@ -68,7 +94,8 @@ nav a {
   transition: all 0.3s ease;
 }
 
-nav a:hover, nav a.active {
+nav a:hover,
+nav a.active {
   background-color: #2980b9;
   transform: translateY(-2px);
 }
@@ -81,7 +108,8 @@ section {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-h1, h2 {
+h1,
+h2 {
   color: #2c3e50;
   margin-bottom: 20px;
   text-align: center;
@@ -134,7 +162,9 @@ label {
   color: #2c3e50;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ddd;
@@ -143,7 +173,9 @@ input, select, textarea {
   transition: border 0.3s;
 }
 
-input:focus, select:focus, textarea:focus {
+input:focus,
+select:focus,
+textarea:focus {
   border-color: #3498db;
   outline: none;
   box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
