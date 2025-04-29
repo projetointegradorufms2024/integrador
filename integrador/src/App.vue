@@ -4,7 +4,7 @@
     <div class="container">
       <header>
         <div class="logo">SOS SOLIDARIEDADE</div>
-        <p class="slogan">Conectando doadores e acamados</p>
+        <p class="slogan">Conectando doador e acamado</p>
       </header>
     </div>
     <!-- Renderiza o componente HomeView -->
